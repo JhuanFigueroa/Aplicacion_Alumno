@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aplicacion_Alumno</string>
+    <string name="textcontra"><u>Olvide mi Contraseña</u></string>
+    <string name="textasp"><u>Aspirantes</u></string>
+</resources>

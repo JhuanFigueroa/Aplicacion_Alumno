@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".no_examen"
+    android:background="@drawable/tesji"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/cardview_shadow_start_color"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NO REALIZACION DE EXAMEN"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserratalternates_bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PASO DE INGRESO"
+                    android:gravity="center"
+                    android:fontFamily="@font/montserratalternates_bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECCIONAR"
+                        android:fontFamily="@font/montserratalternates_bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fontFamily="@font/montserratalternates_bold"
+                        android:gravity="center"
+                        android:text="SIN ARCHIVO"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+                
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FINALIZAR"
+                    android:fontFamily="@font/montserratalternates_bold"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F1010"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/fondochido">
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/tesji_logo" />
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@id/profile"
+                    android:text="BIENVENIDO"
+                    android:fontFamily="@font/montserratalternates_bold"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ana Karen Martinez"
+                    android:layout_below="@+id/Title"
+                    android:layout_toRightOf="@id/profile"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/montserratalternates_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ViewFlipper
+                    android:id="@+id/carrusel"
+                    android:layout_width="match_parent"
+                    android:layout_height="265dp"
+                    android:layout_margin="20dp"
+                    android:elevation="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:layout_marginLeft="25dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardHorarios"
+                        android:layout_height="140dp"
+                        android:layout_width="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="5dp"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/calendar"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HORARIOS"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardConstancias"
+                        android:layout_height="140dp"
+                        android:layout_width="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="5dp"
+                            android:padding="5dp">
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/file"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CONSTANCIAS"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardReins"
+                        android:layout_height="140dp"
+                        android:layout_width="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="5dp"
+                            android:padding="5dp">
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/reins"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="REINSCRIPCION"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

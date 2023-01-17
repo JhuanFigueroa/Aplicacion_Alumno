@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1485" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/drawable/es.xml" value="0.1485" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/drawable/estilo_2.xml" value="0.1485" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/drawable/estilo_uno.xml" value="0.1485" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1485" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout-land/activity_bienvenida_aspirantes.xml" value="0.10963455149501661" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout-land/activity_datos_aspirante.xml" value="0.1" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout-land/activity_examen_aspirantes.xml" value="0.10185185185185185" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout-land/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout-land/activity_no_examen.xml" value="0.1" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout/activity_bienvenida_aspirantes.xml" value="0.22" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout/activity_datos_aspirante.xml" value="0.1" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout/activity_examen_aspirantes.xml" value="0.1" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Memo_Reyes/AndroidStudioProjects/Aplicacion_Alumno/app/src/main/res/layout/activity_no_examen.xml" value="0.1743659420289855" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
