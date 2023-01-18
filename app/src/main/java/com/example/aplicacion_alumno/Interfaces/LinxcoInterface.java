@@ -1,4 +1,5 @@
 package com.example.aplicacion_alumno.Interfaces;
+import com.example.aplicacion_alumno.Materia;
 import com.example.aplicacion_alumno.User;
 import com.google.gson.JsonArray;
 
@@ -12,5 +13,8 @@ import  retrofit2.http.Query;
 public interface LinxcoInterface {
   //Traer datos del usuario
     @GET("alumnos/datosCarga/{matricula}")
-    Call<List<User>> getCargaData(@Path("matricula") String matricula);
+    Call<User> getCargaData(@Path("matricula") String matricula);
+
+    @GET("materias")
+  Call<List<Materia>> getMAterias();
 }

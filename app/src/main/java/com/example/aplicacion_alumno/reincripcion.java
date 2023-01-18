@@ -37,7 +37,8 @@ public class reincripcion extends AppCompatActivity {
     EditText txtPeriodo;
     EditText txtPhone;
     EditText txtEmail;
-
+    EditText txtCarrera;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,11 +49,8 @@ public class reincripcion extends AppCompatActivity {
         txtPeriodo=findViewById(R.id.txtperiodo);
         txtPhone=findViewById(R.id.txtTel);
         txtEmail=findViewById(R.id.txtCorreo);
+        txtCarrera=findViewById(R.id.txtCarrera);
 
-        Spinner spinner = (Spinner) this.findViewById(R.id.carrera);
-        @SuppressLint("ResourceType") ArrayAdapter arrayAdapter = new ArrayAdapter((Context) this, 17367049, this.opcionesCarrera);
-        Intrinsics.checkNotNullExpressionValue(spinner, "spinner");
-        spinner.setAdapter((SpinnerAdapter) arrayAdapter);
 
         Spinner spinnerr = (Spinner) this.findViewById(R.id.factura);
         @SuppressLint("ResourceType") ArrayAdapter arrayAdapterr = new ArrayAdapter((Context) this, 17367049, this.opcionesTipoFac);
@@ -70,16 +68,22 @@ public class reincripcion extends AppCompatActivity {
                 .build();
 
         LinxcoInterface service=retrofit.create(LinxcoInterface.class);
-        Call<List<User>> res= service.getCargaData("201923158");
+        Call<User> res= service.getCargaData("201923158");
 
-        res.enqueue(new Callback<List<User>>() {
+        res.enqueue(new Callback<User>() {
             @Override
-            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                Toast.makeText(reincripcion.this,response.body().toString(),Toast.LENGTH_SHORT).show();
+            public void onResponse(Call<User> call, Response<User> response) {
+              User user=response.body();
+              txtNombre.setText(user.getNombre());
+              txtCarrera.setText(user.getCarrera());
+              txtPhone.setText(user.getTelefono());
+              txtEmail.setText(user.getCorreo());
+              txtPeriodo.setText("2022-1");
+              txtMatricula.setText("201923158");
 
             }
             @Override
-            public void onFailure(Call<List<User>> call, Throwable t) {
+            public void onFailure(Call<User> call, Throwable t) {
                 Toast.makeText(reincripcion.this,"Error"+t,Toast.LENGTH_LONG).show();
                 Log.e("Error:", String.valueOf(t));
             }

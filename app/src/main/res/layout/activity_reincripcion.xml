@@ -302,15 +302,12 @@
                     android:layout_marginLeft="85dp"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                    <Spinner
-                        android:id="@+id/carrera"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtCarrera"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="20dp"
-                        android:background="#A6A8A8"
-                        app:cornerRadius="10dp"
-                        android:layout_marginTop="10dp" />
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="20dp" />
                 </com.google.android.material.textfield.TextInputLayout>
             </androidx.cardview.widget.CardView>
 
@@ -440,42 +437,7 @@
                             android:fontFamily="@font/montserratalternates_bold"
                             android:textSize="11dp" />
 
-                        <CheckBox
-                            android:id="@+id/materia2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Redes Neuronales"
-                            android:fontFamily="@font/montserratalternates_bold"
-                            android:textColor="@color/black"
-                            android:textSize="11dp" />
 
-                        <CheckBox
-                            android:id="@+id/materia3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Fundamentos de programacion"
-                            android:fontFamily="@font/montserratalternates_bold"
-                            android:textSize="11dp" />
-
-                        <CheckBox
-                            android:id="@+id/materia4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:fontFamily="@font/montserratalternates_bold"
-                            android:text="Fundamentos de programacion"
-                            android:textSize="11dp" />
-
-                        <CheckBox
-                            android:id="@+id/materia5"
-                            android:fontFamily="@font/montserratalternates_bold"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Fundamentos de programacion"
-                            android:textSize="11dp" />
 
                     </RadioGroup>
 
