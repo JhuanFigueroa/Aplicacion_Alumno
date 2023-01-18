@@ -24,35 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Peticion().execute();
     }
 
-    public static class Peticion extends AsyncTask<Void,Void,Void>{
-        final String url="https://linxco-backend.herokuapp.com/api/v1/";
-        @Override
-        protected Void doInBackground(Void... voids) {
 
-            Retrofit retrofit= new Retrofit.Builder()
-                    .baseUrl(url)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-
-            LinxcoInterface service=retrofit.create(LinxcoInterface.class);
-            Call<List<User>> res= service.getCargaData("201923158");
-
-            try {
-                for (User user:res.execute().body()
-                     ) {
-                    Log.e("Respuesta:",user.getNombre() );
-                }
-
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            return null;
-
-        }
-    }
     public void irMenu(View Object){
         Intent accion = new Intent(this,menu_inicio.class);
         startActivity(accion);

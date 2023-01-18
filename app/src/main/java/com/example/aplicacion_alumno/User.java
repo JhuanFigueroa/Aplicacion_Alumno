@@ -1,10 +1,21 @@
 package com.example.aplicacion_alumno;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class User {
 
+    @SerializedName("nombre")
+    @Expose
     private String nombre;
+    @SerializedName("telefono")
+    @Expose
     private String telefono;
+    @SerializedName("correo")
+    @Expose
     private String correo;
+    @SerializedName("carrera")
+    @Expose
     private String carrera;
 
     public String getNombre() {
@@ -38,5 +49,4 @@ public class User {
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
-
 }
