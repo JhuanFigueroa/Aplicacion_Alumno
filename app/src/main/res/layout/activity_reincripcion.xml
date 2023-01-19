@@ -113,17 +113,17 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/radioButton"
+                        android:id="@+id/rbInscripcion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Incripcion"
+                        android:text="Inscripcion"
                         android:fontFamily="@font/montserratalternates_bold"
                         android:textColor="@color/black"
                         android:textSize="12dp" />
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/rbReinscripcion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -133,7 +133,7 @@
                         android:textSize="12dp" />
 
                     <RadioButton
-                        android:id="@+id/radioButton3"
+                        android:id="@+id/rbCursoVerano"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
@@ -408,6 +408,7 @@
                             android:textStyle="bold" />
 
                         <Button
+                            android:id="@+id/btnAddMaterias"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Agregar"
@@ -418,28 +419,23 @@
 
                             />
                     </LinearLayout>
-                    <RadioGroup
-                        android:id="@+id/groupmateria"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="50dp"
-                        android:layout_marginLeft="5dp"
-                        android:orientation="vertical">
+
+                   <ScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <RadioGroup
+                           android:id="@+id/groupmateria"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="50dp"
+                           android:layout_marginLeft="5dp"
+                           android:orientation="vertical">
 
 
-                        <CheckBox
-                            android:id="@+id/materia1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="5dp"
-                            android:text="Programacion orientada a objetos"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/montserratalternates_bold"
-                            android:textSize="11dp" />
+                       </RadioGroup>
+                   </ScrollView>
 
 
-
-                    </RadioGroup>
 
                 </androidx.cardview.widget.CardView>
             </ScrollView>
@@ -524,6 +520,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp">
                 <Button
+                    android:id="@+id/btGuardar"
                     android:layout_width="125dp"
                     android:layout_height="60dp"
                     android:text="GUARDAR"
